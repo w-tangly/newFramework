@@ -1,0 +1,35 @@
+h1{
+    margin: 2rem 0 !important;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.row{
+    gap:2rem !important;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq{
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10rem;
+    background-color: #7036BA;
+    width: 100vw;
+    justify-self: center;
+    justify-content: center;
+}
+
+.accordion{
+    max-width: 50vw!important;
+    min-width: 50vw!important;
+}
