@@ -1,5 +1,7 @@
 h1{
     margin: 2rem 0 !important;
+    font-size:2em;
+    font-weight: bold;
 }
 
 body{
@@ -16,6 +18,7 @@ body{
     .row{
         padding: 0 !important;
         margin:0!important;
+        flex-direction: column;
     }
 
     .col{
@@ -79,7 +82,18 @@ body{
 }
 
 .form-check{
-    max-width: 10vw;
+    max-width: 15vw;
+}
+
+.startTraining .btn.btn-primary, .howToStart .btn.btn-primary, .hero .btn.btn-primary{
+    padding: 1rem 5rem;
+    border-radius: 30px;
+    color: white;
+    background-color: #00BFB4;
+    font-weight: bold;
+    border: none;
+    font-size: 1.25em;
+    margin-bottom: 1rem;;
 }
 
 @media(width<1400px){
@@ -88,6 +102,73 @@ body{
     }
 
     .form-check{
+        max-width: 60vw;
+    }
+
+    .btn.btn-primary{
+        padding: .5rem 2rem;
+    }
+}
+
+footer{
+    background-color: #7036BA;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 0;
+    color: white;
+    margin-top: 2rem;
+}
+
+.pricing{
+    background-color: #7036BA;
+    padding: 3rem;
+    margin: 2rem 0;
+}
+
+.pricing .card-body{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.pricing .card{
+    background-color: #A76BF2;
+}
+
+.pricing h1, .pricing .card-body{
+    color: white;
+}
+
+.pricing .row{
+    text-align: left;
+}
+
+.pricing .card-text{
+    font-weight: lighter;
+}
+
+.pricing .card-title{
+    font-size: 1.5em;
+}
+
+.pricing .btn.btn-primary{
+    border: 2px solid white;
+    background-color: none;
+    padding: .5rem 2rem;
+    border-radius: 20px;
+    max-width: 8vw;
+}
+
+@media(width<1400px){
+    .pricing .container.text-center .row, .features .container.text-center .row{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pricing .btn.btn-primary{
         max-width: 40vw;
     }
 }

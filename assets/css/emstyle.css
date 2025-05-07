@@ -1,0 +1,47 @@
+.features{
+    margin:4rem 0;
+}
+
+.howToStart{
+    background-color: #7036BA;
+    color: white;
+    padding-top: 2rem;
+    margin: 2rem 0 0 0;
+}
+
+.howToStart .col{
+    display: flex;
+    flex-direction: row;
+    max-width: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+
+.howToStart img{
+    max-width: 2rem;
+    max-height: fit-content;
+}
+
+.num{
+    font-size:8rem;
+    padding-bottom: 2rem;
+}
+
+@media(width<1400px){
+    .howToStart .col:nth-of-type(2), .howToStart .col:nth-of-type(4){
+        display: none;
+    }
+
+    .num{
+        font-size: 7rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.hero{
+    background-color: #7036BA;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
