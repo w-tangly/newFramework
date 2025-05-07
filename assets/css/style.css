@@ -8,6 +8,34 @@ body{
 
 .row{
     gap:2rem !important;
+    padding: 0 !important;
+    margin:0!important;
+}
+
+@media(width<1400px){
+    .row{
+        padding: 0 !important;
+        margin:0!important;
+    }
+
+    .col{
+        padding: 0 !important;
+        margin:0!important;
+    }
+    
+    .col img{
+        max-width: 90vw!important;
+    }
+
+    .container-fluid, .container{
+        padding: 0!important;
+        margin:0!important;
+    }
+}
+
+.container-fluid:nth-of-type(2){
+    padding: 0!important;
+    margin:0!important;
 }
 
 .card{
@@ -15,21 +43,51 @@ body{
     flex-direction: row;
     padding: 1rem 2rem;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    gap:1rem;
 }
 
 .faq{
     margin: 4rem 0;
     display: flex;
     flex-direction: column;
-    padding: 10rem;
+    padding: 3rem 0 8rem 0;
     background-color: #7036BA;
     width: 100vw;
-    justify-self: center;
-    justify-content: center;
+    justify-content:center;
+}
+
+.faq .container.text-center{
+    color: white;
 }
 
 .accordion{
-    max-width: 50vw!important;
-    min-width: 50vw!important;
+    max-width: 70vw!important;
+    min-width: 70vw!important;
+    align-self: center;
+}
+
+@media(width<1400px){
+    .faq{
+        padding: 1.5rem 0 5rem 0;
+    }
+}
+
+.startTraining form{
+    justify-self: center;
+    min-width: 50vw;
+}
+
+.form-check{
+    max-width: 10vw;
+}
+
+@media(width<1400px){
+    .startTraining form{
+        min-width: 90vw;
+    }
+
+    .form-check{
+        max-width: 40vw;
+    }
 }

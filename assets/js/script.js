@@ -1,0 +1,2 @@
+const accordionCollapseElementList = document.querySelectorAll('#panelsStayOpen-collapseFour.collapse')
+const accordionCollapseList = [...accordionCollapseElementList].map(accordionCollapseEl => new bootstrap.Collapse(accordionCollapseEl))
