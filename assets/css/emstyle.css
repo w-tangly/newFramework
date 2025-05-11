@@ -1,15 +1,15 @@
-.features{
-    margin:4rem 0;
+.features {
+    margin: 4rem 0;
 }
 
-.howToStart{
+.howToStart {
     background-color: #7036BA;
     color: white;
     padding-top: 2rem;
     margin: 2rem 0 0 0;
 }
 
-.howToStart .col{
+.howToStart .col {
     display: flex;
     flex-direction: row;
     max-width: fit-content;
@@ -17,31 +17,89 @@
     justify-content: center;
 }
 
-.howToStart img{
+.howToStart img {
     max-width: 2rem;
     max-height: fit-content;
 }
 
-.num{
-    font-size:8rem;
+.num {
+    font-size: 8rem;
     padding-bottom: 2rem;
 }
 
-@media(width<1400px){
-    .howToStart .col:nth-of-type(2), .howToStart .col:nth-of-type(4){
+@media(width<1400px) {
+
+    .howToStart .col:nth-of-type(2),
+    .howToStart .col:nth-of-type(4) {
         display: none;
     }
 
-    .num{
+    .num {
         font-size: 7rem;
         padding-bottom: 1rem;
     }
 }
 
-.hero{
+.hero {
     background-color: #7036BA;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    justify-content:flex-end;
+    gap: 10rem;
+    color: white;
+}
+
+@media(width<1024px){
+    .hero{
+        flex-direction: column;
+        padding: 3rem 0 0 0;
+        gap: 0;        
+        text-align: center;
+    }
+
+    .hero .btn.btn-primary{
+        margin: 0 0 -2rem;
+        position: sticky;
+    }
+}
+
+header {
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40vw;
+    padding: 0 10rem;
+    max-width: 100vw;
+}
+
+.burg-line{
+    
+    min-width: 2rem;
+    display: none;
+}
+
+.burg-line span{
+    background-color: white;
+    border: white 1px solid;
+}
+
+.nav-link{
+    color: white;
+}
+
+@media(width<1024px){
+    header .nav.justify-content-end{
+        display: none;
+    }
+    header{
+        padding: 0 2rem;
+        }
+    .burg-line{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;   
+    }
 }
